@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>demo2</title>
+
+<style type="text/css">
+html{
+	font-size: 625%;
+}
+	.banner {
+  position: relative;
+  overflow: hidden;
+}
+.banner ul {
+  width: 500%;
+  font-size: 0;
+  -webkit-animation: banner 12s normal infinite;
+  -o-animation: banner 12s normal infinite;
+  animation: banner 12s normal infinite;
+}
+.banner ul li {
+  display: inline-block;
+  width: 20%;
+}
+.banner ul li img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+@keyframes banner {
+  0% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -400%;
+  }
+}
+.banner .carousel-indicators {
+  position: absolute;
+  bottom: .2rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  display: flex;
+  justify-content: space-around;
+  width: 1rem;
+}
+.banner .carousel-indicators .from-to from {
+  background: #29b078;
+}
+.banner .carousel-indicators .from-to to {
+  background: #fff;
+}
+.banner .carousel-indicators div {
+  width: .1rem;
+  height: .1rem;
+  background: #29b078;
+  border-radius: 50%;
+}
+.banner .carousel-indicators div:nth-of-type(1) {
+  -webkit-animation: ind1 12s 0s normal infinite;
+  -o-animation: ind1 12s 0s normal infinite;
+  animation: ind1 12s 0s normal infinite;
+}
+.banner .carousel-indicators div:nth-of-type(2) {
+  -webkit-animation: ind1 12s 3s normal infinite;
+  -o-animation: ind1 12s 3s normal infinite;
+  animation: ind1 12s 3s normal infinite;
+}
+.banner .carousel-indicators div:nth-of-type(3) {
+  -webkit-animation: ind1 12s 6s normal infinite;
+  -o-animation: ind1 12s 6s normal infinite;
+  animation: ind1 12s 6s normal infinite;
+}
+.banner .carousel-indicators div:nth-of-type(4) {
+  -webkit-animation: ind1 12s 9s normal infinite;
+  -o-animation: ind1 12s 9s normal infinite;
+  animation: ind1 12s 9s normal infinite;
+}
+@keyframes ind1 {
+  from {
+    background: #29b078;
+  }
+  to {
+    background: #fff;
+  }
+}
+@keyframes ind2 {
+  from {
+    background: #29b078;
+  }
+  to {
+    background: #fff;
+  }
+}
+@keyframes ind3 {
+  from {
+    background: #29b078;
+  }
+  to {
+    background: #fff;
+  }
+}
+@keyframes ind4 {
+  from {
+    background: #29b078;
+  }
+  to {
+    background: #fff;
+  }
+}
+.banner a {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 15%;
+}
+.banner a span {
+  text-align: center;
+  font-size: .8rem;
+  color: rgba(255, 255, 255, 0.48);
+}
+@media (max-width: 768px) {
+  .banner a span {
+    font-size: .4rem;
+  }
+}
+.banner .left {
+  left: 0;
+  top: 0;
+}
+.banner .left:hover {
+  background: -webkit-linear-gradient(right, transparent, rgba(0, 0, 0, 0.8));
+}
+.banner .right {
+  right: 0;
+  top: 0;
+}
+.banner .right:hover {
+  background: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.8));
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+	<div class="banner">
+    <ul>
+        <li><img src="images/img.png" alt=""></li>
+        <li><img src="images/img.png" alt=""></li>
+        <li><img src="images/img.png" alt=""></li>
+        <li><img src="images/img.png" alt=""></li>
+        <li><img src="images/img.png" alt=""></li>
+    </ul>
+    <div class="carousel-indicators">
+        <div class="carousel1"></div>
+        <div class="carousel2"></div>
+        <div class="carousel3"></div>
+        <div class="carousel4"></div>
+    </div>
+    <a class="carousel-control left" href="#">
+        <span>&lt;</span>
+    </a>
+    <a class="carousel-control right" href="#">
+        <span>&gt;</span>
+    </a>
+
+</div>
+<!--轮播图结束-->
+
+	
+
+
+</body>
+</html>
+
+
+
+
+
